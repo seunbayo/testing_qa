@@ -1,0 +1,22 @@
+<!-- To include header.ejs -->
+<%- include ("./partials/header") %>
+<div class="container">
+  <div id="end" class="flex-center flex-column">
+    <h1 id="finalScore"></h1>
+    <form action="/highscores" method="POST">
+      <input type="text" name="username" id="username" placeholder="username" />
+      <input type="hidden" id="final-score-input" name="score" />
+      <button type="submit" class="btn" id="saveScoreBtn">
+        Save
+      </button>
+    </form>
+
+    <a href="/course" class="btn">Play Again</a>
+    <a href="/home" class="btn">Go Home</a>
+  </div>
+</div>
+
+<script src="/js/end.js"></script>
+
+<!-- To include footer.ejs -->
+<%- include ("./partials/footer") %>

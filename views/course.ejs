@@ -1,0 +1,16 @@
+<!-- To include header.ejs -->
+<%- include ("./partials/header", { showHeader: true }) %>
+
+<div class="container">
+  <div id="home" class="flex-center flex-column">
+    <a href="/" class="home"> <h1>Quiz App</h1> </a>
+    <a href="/diff#course=gse" class="btn" data-append-hash>GSE</a>
+    <!-- <a href="/diff#course=edu" class="btn" data-append-hash>EDU</a> -->
+    <a href="/diff" class="btn" data-append-hash>EDU</a>
+
+  </div>
+</div>
+<script src="/js/link.js"></script>
+
+<!-- To include footer.ejs -->
+<%- include ("./partials/footer") %>

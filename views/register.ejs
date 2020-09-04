@@ -1,0 +1,52 @@
+<!-- To include header.ejs -->
+<%- include ("./partials/header" , { showHeader: true }) %>
+
+<div id="home" class="flex-center flex-column">
+  <a href="/" class="home"> <h1>Quiz App</h1> </a>
+</div>
+<div class="container" id="reg">
+  <form action="/register" method="post">
+    <div class="bio">
+      <label for="fname">Full Name</label>
+      <input
+        required
+        class="log"
+        type="text"
+        name="fullname"
+        placeholder="Full Name"
+      />
+      <label for="username">username</label>
+      <input
+        required
+        class="log"
+        type="text"
+        name="username"
+        placeholder="username"
+      />
+      <label for="email">email</label>
+      <input
+        required
+        class="log"
+        type="email"
+        name="email"
+        placeholder="email address"
+      />
+      <label for="level">Level</label>
+      <select required name="level" id="level">
+        <option value="100">100 Level</option>
+        <option value="200">200 Level</option>
+      </select>
+
+      <label for="password">password</label>
+      <input
+        required
+        class="log"
+        type="password"
+        name="password"
+        placeholder="password"
+      />
+
+      <button type="submit" class="btn">Sign Up</button>
+    </div>
+  </form>
+</div>
