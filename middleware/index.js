@@ -11,10 +11,6 @@ middlewareObj.isLoggedIn = function(req, res, next){
   }
 
 
-  const asyncMiddleware = fn =>
-  (req, res, next) => {
-    Promise.resolve(fn(req, res, next))
-      .catch(next);
-  };
+
 
   module.exports = middlewareObj;
